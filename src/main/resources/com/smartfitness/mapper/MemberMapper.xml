@@ -1,3 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.smartfitness.mapper.MemberMapper"></mapper>
+<mapper namespace="com.smartfitness.mapper.MemberMapper">
+
+<!--회원가입-->
+<insert id = "join" parameterType="com.smartfitness.mapper.MemberMapper">
+    insert into sf_members
+    values(#{mem_id},#{mem_pw},#{mem_name},now(),#{mem_grade},#{mem_email},#{mem_phone},#{mem_addr},#{mem_birthday},null)
+</insert>
+
+</mapper>
