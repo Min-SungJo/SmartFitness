@@ -22,8 +22,6 @@ body{
         color: whitesmoke;
         font-size: x-small;
     
-      //형주형한테 물어보기~ 바닥에 고정하고 싶어요 div크기 상관 없이!
-      // 근데 컨텐츠를 가리면 안됨! 스크롤 상관없이 맨 밑에 두고 싶어요!
         *{
             margin-top: 0px;
             margin-bottom: 0px;
@@ -32,6 +30,10 @@ body{
         span{
             margin-left: 7px;
         }
+    }
+
+    .test{
+        background-color: aqua;
     }
 
 
