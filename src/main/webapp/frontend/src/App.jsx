@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import './Scss/body.scss';
 import './Scss/navBar.scss'
+import './Scss/components.scss'
 
 import Main from './Pages/Main';
 import NavBar from './Pages/NavBar';

@@ -14,10 +14,54 @@ body{
         background-color: black;
         color: white;
         font-size: xx-large;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         padding: 10vh;
+
+        .join_form{
+            display: inline;
+            background-color: aqua;
+            text-align: right;
+            box-sizing: content-box;
+
+            input{
+                width: 200px;
+            }
+        }
+
+
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-content: center;            
+            
+            width: 50vw;
+            
+            *{
+                height: 30px;
+                margin: 5px;
+            }
+            
+            textarea{
+                height: 200px;
+                resize: none;
+            }
+    
+        }
+
+        
     }
 
+    
     .footer{
         color: whitesmoke;
         font-size: x-small;

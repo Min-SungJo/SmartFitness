@@ -5,7 +5,11 @@ const Booking = () => {
   return (
     <div className='divStyle'>
         Booking!
-        <ItemBox/>
+        <div>
+        <ItemBox title="단체운동예약"/>
+        <ItemBox title="개인운동예약"/>
+        <ItemBox title="운동기구예약"/>
+        </div>
     </div>
   )
 }
