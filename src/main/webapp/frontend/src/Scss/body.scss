@@ -13,23 +13,13 @@ body{
     .divStyle{ // 공통 Div 스타일
         background-color: black;
         color: white;
-        font-size: xx-large;
+        font-size: larger;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
         padding: 10vh;
-
-        .join_form{
-            display: inline;
-            background-color: aqua;
-            text-align: right;
-
-            input{
-                width: 200px;
-            }
-        }
 
 
         div{
@@ -75,9 +65,6 @@ body{
         }
     }
 
-    .test{
-        background-color: aqua;
-    }
 
 
 }

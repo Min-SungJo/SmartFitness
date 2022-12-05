@@ -6,7 +6,6 @@ const ItemBox = (props) => {
 
     <div className='itemBox_div'>
       <h3>{props.title}</h3>
-      
     </div>
 
   )

@@ -1,8 +1,20 @@
 .itemBox_div{
     width: 20vw;
-    height: 70vh;
-    background-color: aqua;
-
+    background-color: wheat;
     margin: 20px;
+    padding: 20px;
 }
+
+.gx_table{
+
+    background-color: white;
+    color: black;
+    border-collapse: collapse;
+    
+    th,td{
+        border: 1px solid black;
+    }
+
+}
+
 

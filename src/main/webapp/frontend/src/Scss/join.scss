@@ -1,0 +1,40 @@
+.join_div{
+    padding: 200px 0px 50px 0px;
+    color: white;
+
+
+    Button{
+        width: 15vw;
+        height: 50px;
+        margin-top: 50px;
+
+    }
+
+    Input{
+        width: 30vw;
+        background-color: whitesmoke;
+        margin: 10px 0px 10px 0px;
+     
+       
+    }
+    
+    Input::placeholder{
+        color: rgb(75, 75, 75);
+        opacity: 1;
+
+    }
+    
+
+
+    .input-label{
+        font-size: larger;
+        margin-top: 20px;
+    }
+
+    .error-message{
+        color: red;
+        font-size: smaller;
+        margin: 0px 0px 20px 0px;
+    }
+    
+}
