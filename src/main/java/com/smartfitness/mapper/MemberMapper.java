@@ -21,4 +21,5 @@ public interface MemberMapper {
     /**회원 탈퇴 */
     void delete(Map<String, String> param);
     
+    
 }
