@@ -1,8 +1,12 @@
 package com.smartfitness.controller;
 
+import java.util.ArrayList;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,4 +29,16 @@ public class EquipmentRestController {
     @PostMapping("/update")
     public void updateEm(@RequestBody Map<String, Object> param){
         equipmentService.updateEm(param);
+    }
+
+    /**운동기구 타입확인 */
+    @GetMapping("/select")
+    public ResponseEntity<?> select(){
+        HttpHeaders headers = new HttpHeaders();
+        ArrayList<Map<String,Object>> body = equipmentService.select();
+        return ResponseEntity.ok()
+        .headers(headers)
+        .body(body);
+    }
+
 }
