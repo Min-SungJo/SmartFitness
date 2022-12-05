@@ -8,5 +8,7 @@ import org.apache.ibatis.annotations.Mapper;
 public interface EquipmentMapper {
 
     void addEm(Map<String, Object> param);
+
+    void updateEm(Map<String, Object> param);
     
 }

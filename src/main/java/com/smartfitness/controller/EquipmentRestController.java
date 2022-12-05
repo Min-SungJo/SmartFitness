@@ -15,8 +15,14 @@ public class EquipmentRestController {
     @Autowired
     EquipmentService equipmentService;
 
+    /**운동기구 추가 */
     @PostMapping("/add")
     public void addEm(@RequestBody Map<String, Object> param){
         equipmentService.addEm(param);
     }
+
+    /**운동기구 수정 */
+    @PostMapping("/update")
+    public void updateEm(@RequestBody Map<String, Object> param){
+        equipmentService.updateEm(param);
 }

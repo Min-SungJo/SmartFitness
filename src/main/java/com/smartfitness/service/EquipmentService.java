@@ -12,8 +12,15 @@ public class EquipmentService {
 
     @Autowired
     EquipmentMapper equipmentMapper;
+
+    /**운동기구 추가 */
     public void addEm(Map<String, Object> param) {
         equipmentMapper.addEm(param);
+    }
+
+    /**운동기구 수정 */
+    public void updateEm(Map<String, Object> param) {
+        equipmentMapper.updateEm(param);
     }
     
 }
